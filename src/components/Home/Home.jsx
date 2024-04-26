@@ -1,9 +1,10 @@
 import React from "react";
+import ArtAndCraftCategoriesSection from "./ArtAndCraftCategoriesSection";
 
 const Home = () => {
   return (
     <div>
-      <h3>This is Home</h3>
+      <ArtAndCraftCategoriesSection></ArtAndCraftCategoriesSection>
     </div>
   );
 };

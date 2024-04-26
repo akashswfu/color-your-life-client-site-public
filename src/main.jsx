@@ -16,6 +16,8 @@ import AllArtCraft from "./components/Craft/AllArtCraft";
 import MyCraftList from "./components/Craft/MyCraftList";
 import ViewDetails from "./components/Craft/ViewDetails";
 import UpdateData from "./components/Craft/UpdateData";
+import Addcategory from "./components/Addcategory";
+import ArtAndCraftCategoriesSection from "./components/Home/ArtAndCraftCategoriesSection";
 
 const router = createBrowserRouter([
   {
@@ -60,6 +62,10 @@ const router = createBrowserRouter([
         element: <UpdateData></UpdateData>,
         loader: ({ params }) =>
           fetch(`http://localhost:5000/item/${params.id}`),
+      },
+      {
+        path: "/addCategory",
+        element: <Addcategory></Addcategory>,
       },
     ],
   },
