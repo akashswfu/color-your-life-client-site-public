@@ -1,0 +1,138 @@
+[
+    {
+      "image": "image_url_here",
+      "item_name": "Mountain View Canvas Painting",
+      "subcategory_name": "Landscape Painting",
+      "short_description": "A beautiful depiction of a mountain landscape on canvas.",
+      "price": "Price_here",
+      "rating": "Rating_here",
+      "customization": "yes",
+      "processing_time": "Processing_time_here",
+      "stock_status": "In stock",
+      "add_button": "Add"
+    },
+    {
+      "image": "image_url_here",
+      "item_name": "Forest Based Landscape Painting",
+      "subcategory_name": "Landscape Painting",
+      "short_description": "A serene forest scene captured on canvas.",
+      "price": "Price_here",
+      "rating": "Rating_here",
+      "customization": "yes",
+      "processing_time": "Processing_time_here",
+      "stock_status": "In stock",
+      "add_button": "Add"
+    },
+    {
+      "image": "image_url_here",
+      "item_name": "Pencil Sketch Portrait",
+      "subcategory_name": "Portrait Sketch",
+      "short_description": "A detailed pencil sketch portrait of a person.",
+      "price": "Price_here",
+      "rating": "Rating_here",
+      "customization": "yes",
+      "processing_time": "Processing_time_here",
+      "stock_status": "In stock",
+      "add_button": "Add",
+      "room_image":"https://i.postimg.cc/3RVjnkRs/lotus-design-n-print-Eo-TUCbv9-Jrs-unsplash.jpg"
+    },
+    {
+      "image": "image_url_here",
+      "item_name": "Ink Outline Portrait",
+      "subcategory_name": "Portrait Sketch",
+      "short_description": "An artistic portrait outlined in ink.",
+      "price": "Price_here",
+      "rating": "Rating_here",
+      "customization": "yes",
+      "processing_time": "Processing_time_here",
+      "stock_status": "In stock",
+      "add_button": "Add",
+      "room_image":"https://i.postimg.cc/3RVjnkRs/lotus-design-n-print-Eo-TUCbv9-Jrs-unsplash.jpg"
+    },
+    {
+      "image": "image_url_here",
+      "item_name": "Acrylic Portrait Canvas",
+      "subcategory_name": "Portrait Painting",
+      "short_description": "Vibrant portrait painted with acrylics on canvas.",
+      "price": "Price_here",
+      "rating": "Rating_here",
+      "customization": "yes",
+      "processing_time": "Processing_time_here",
+      "stock_status": "In stock",
+      "add_button": "Add",
+      "room_image":"https://i.postimg.cc/3RVjnkRs/lotus-design-n-print-Eo-TUCbv9-Jrs-unsplash.jpg"
+    },
+    {
+      "image": "image_url_here",
+      "item_name": "Floral Watercolor Art",
+      "subcategory_name": "Watercolor Painting",
+      "short_description": "Delicate flowers painted in watercolor.",
+      "price": "Price_here",
+      "rating": "Rating_here",
+      "customization": "yes",
+      "processing_time": "Processing_time_here",
+      "stock_status": "In stock",
+      "add_button": "Add"
+    },
+    {
+      "image": "image_url_here",
+      "item_name": "Animal Watercolor Portrait",
+      "subcategory_name": "Watercolor Painting",
+      "short_description": "A charming watercolor portrait of an animal.",
+      "price": "Price_here",
+      "rating": "Rating_here",
+      "customization": "yes",
+      "processing_time": "Processing_time_here",
+      "stock_status": "In stock",
+      "add_button": "Add"
+    },
+    {
+      "image": "image_url_here",
+      "item_name": "Figure Charcoal Sketch",
+      "subcategory_name": "Charcoal Sketch",
+      "short_description": "A dynamic figure sketched in charcoal.",
+      "price": "Price_here",
+      "rating": "Rating_here",
+      "customization": "yes",
+      "processing_time": "Processing_time_here",
+      "stock_status": "In stock",
+      "add_button": "Add"
+    },
+    {
+      "image": "image_url_here",
+      "item_name": "Architectural Charcoal Drawing",
+      "subcategory_name": "Charcoal Drawing",
+      "short_description": "An architectural drawing rendered in charcoal.",
+      "price": "Price_here",
+      "rating": "Rating_here",
+      "customization": "yes",
+      "processing_time": "Processing_time_here",
+      "stock_status": "In stock",
+      "add_button": "Add"
+    },
+    {
+      "image": "image_url_here",
+      "item_name": "Comic Strip Drawing",
+      "subcategory_name": "Comic Drawing",
+      "short_description": "Whimsical comic strip drawing.",
+      "price": "Price_here",
+      "rating": "Rating_here",
+      "customization": "yes",
+      "processing_time": "Processing_time_here",
+      "stock_status": "In stock",
+      "add_button": "Add"
+    },
+    {
+      "image": "image_url_here",
+      "item_name": "Superhero Cartoon Design",
+      "subcategory_name": "Cartoon Design",
+      "short_description": "Bold and dynamic superhero cartoon design.",
+      "price": "Price_here",
+      "rating": "Rating_here",
+      "customization": "yes",
+      "processing_time": "Processing_time_here",
+      "stock_status": "In stock",
+      "add_button": "Add"
+    }
+  ]
+  

@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import profile from "../../../public/images/user.png";
 import homeIcons from "/images/home.png";
-import swal from "sweetalert";
+import Swal from "sweetalert2";
 
 const Navbar = () => {
   const { logOut, user } = useContext(AuthContext);
@@ -12,7 +12,7 @@ const Navbar = () => {
   const handleLogout = () => {
     logOut()
       .then(() => {
-        swal.fire({
+        Swal.fire({
           text: "LogOut Success! ",
           toast: true,
           position: "top-right",
@@ -33,17 +33,20 @@ const Navbar = () => {
       <li className="">
         <NavLink to="/">Home</NavLink>
       </li>
-      {user && (
+      {/* {user && (
         <li>
-          <NavLink to="/updateProfile">Update Profile</NavLink>
+          <NavLink to="/updateProfile">All Art & craft Items</NavLink>
         </li>
-      )}
+      )} */}
 
       <li>
-        <NavLink to="/contactUs">Feedback</NavLink>
+        <NavLink to="/allArtCraft">All Art & craft Items</NavLink>
       </li>
       <li>
-        <NavLink to="/allRooms">Rooms</NavLink>
+        <NavLink to="/addCraft">Add Craft Item</NavLink>
+      </li>
+      <li>
+        <NavLink to="/myCraftList">My Art&Craft List</NavLink>
       </li>
     </div>
   );
@@ -149,11 +152,18 @@ const Navbar = () => {
             </button>
           </div>
         ) : (
-          <Link to="/login">
-            <button className="btn btn-outline bg-green-600  hover:bg-green-700 px-8 font-semibold uppercase text-md  text-white border-0 text-md">
-              Login
-            </button>
-          </Link>
+          <div className="flex gap-4">
+            <Link to="/login">
+              <button className="btn btn-outline bg-green-600  hover:bg-green-700 px-8 font-semibold uppercase text-md  text-white border-0 text-md">
+                Login
+              </button>
+            </Link>
+            <Link to="/register">
+              <button className="btn btn-outline bg-green-600  hover:bg-green-700 px-8 font-semibold uppercase text-md  text-white border-0 text-md">
+                Register
+              </button>
+            </Link>
+          </div>
         )}
       </div>
     </div>
