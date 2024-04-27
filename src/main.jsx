@@ -8,8 +8,6 @@ import Root from "./Root/Root";
 import Home from "./components/Home/Home";
 import Login from "./components/UserLogged/Login";
 import Register from "./components/UserLogged/Register";
-
-import PrivateRoute from "./PrivateRoute/PrivateRoute";
 import AuthProvider from "./Providers/AuthProvider";
 import AddCraft from "./components/Craft/AddCraft";
 import AllArtCraft from "./components/Craft/AllArtCraft";
@@ -17,7 +15,8 @@ import MyCraftList from "./components/Craft/MyCraftList";
 import ViewDetails from "./components/Craft/ViewDetails";
 import UpdateData from "./components/Craft/UpdateData";
 import Addcategory from "./components/Addcategory";
-import ArtAndCraftCategoriesSection from "./components/Home/ArtAndCraftCategoriesSection";
+import PrivateRoute from "./PrivateRoute/PrivateRoute";
+import AllSubCategory from "./components/Home/AllSubCategory";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +27,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+        loader: () => fetch("http://localhost:5000/item"),
       },
       {
         path: "/login",
@@ -39,7 +39,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/addCraft",
-        element: <AddCraft></AddCraft>,
+        element: (
+          <PrivateRoute>
+            <AddCraft></AddCraft>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/allArtCraft",
@@ -47,25 +51,50 @@ const router = createBrowserRouter([
         loader: () => fetch("http://localhost:5000/item"),
       },
       {
-        path: "/myCraftList",
-        element: <MyCraftList></MyCraftList>,
-        loader: () => fetch("http://localhost:5000/item"),
+        path: "/myCraftList/:email",
+        element: (
+          <PrivateRoute>
+            <MyCraftList></MyCraftList>
+          </PrivateRoute>
+        ),
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/emailItem/${params.email}`),
       },
       {
         path: "/item/:id",
-        element: <ViewDetails></ViewDetails>,
+        element: (
+          <PrivateRoute>
+            {" "}
+            <ViewDetails></ViewDetails>
+          </PrivateRoute>
+        ),
         loader: ({ params }) =>
           fetch(`http://localhost:5000/item/${params.id}`),
       },
       {
         path: "/updateItem/:id",
-        element: <UpdateData></UpdateData>,
+        element: (
+          <PrivateRoute>
+            <UpdateData></UpdateData>
+          </PrivateRoute>
+        ),
         loader: ({ params }) =>
           fetch(`http://localhost:5000/item/${params.id}`),
       },
       {
         path: "/addCategory",
-        element: <Addcategory></Addcategory>,
+        element: (
+          <PrivateRoute>
+            {" "}
+            <Addcategory></Addcategory>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/allCategory/:subcategory",
+        element: <AllSubCategory></AllSubCategory>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/allCategory/${params.subcategory}`),
       },
     ],
   },

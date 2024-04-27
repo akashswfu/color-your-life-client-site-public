@@ -5,20 +5,7 @@ import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const MyCraftCard = ({ item, myItem, setMyItem }) => {
-  const {
-    name,
-    subcategory,
-    description,
-    price,
-    rating,
-    customization,
-    processing,
-    image,
-    email,
-    displayName,
-    stock,
-    _id,
-  } = item;
+  const { name, price, rating, customization, image, stock, _id } = item;
   const handleDelete = (_id) => {
     Swal.fire({
       title: "Are you sure?",
@@ -52,21 +39,23 @@ const MyCraftCard = ({ item, myItem, setMyItem }) => {
   };
 
   return (
-    <div className="card card-side bg-base-100 shadow-xl">
-      <figure>
-        <img className="h-40 rounded-lg w-40" src={image} alt="Movie" />
-      </figure>
-      <div className="flex py-5 items-center justify-between w-full">
-        <div className="card-body">
-          <h2 className="card-title">Name: {name}</h2>
-          <p>Supplier {price}</p>
-          <p>Quantity {rating}</p>
+    <div className="flex rounded-2xl w-[700px] mx-auto gap-10 bg-base-100 shadow-xl mt-8">
+      <div>
+        <img className="w-60 rounded-l-2xl h-full" src={image} alt="" />
+      </div>
+      <div className="flex py-4 justify-between w-full">
+        <div className="flex space-y-5 flex-col justify-">
+          <h1 className="text-2xl font-semibold">{name}</h1>
+          <div className="flex gap-5 font-semibold">
+            <p>{price}</p>
+            <p>{rating}</p>
+          </div>
+          <div className="flex gap-5 font-semibold">
+            <p>{customization}</p>
+            <p>{stock}</p>
+          </div>
         </div>
-        <div className="card-body">
-          <p>Supplier {customization}</p>
-          <p>Quantity {stock}</p>
-        </div>
-        <div className="card-actions justify-end">
+        <div className="card-actions">
           <div className="join join-vertical me-5 space-y-3">
             <Link to={`/item/${_id}`}>
               <button className="btn bg-green-500 border-0">

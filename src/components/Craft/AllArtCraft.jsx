@@ -3,7 +3,6 @@ import ShowAllArtAndCraft from "./ShowAllArtAndCraft";
 
 const AllArtCraft = () => {
   const allItems = useLoaderData();
-  console.log(allItems);
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 justify-center">

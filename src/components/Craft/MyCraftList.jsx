@@ -4,22 +4,20 @@ import { useLoaderData } from "react-router-dom";
 import MyCraftCard from "./MyCraftCard";
 
 const MyCraftList = () => {
-  const allData = useLoaderData();
+  const LoadedMyItem = useLoaderData();
 
-  const { user } = useContext(AuthContext);
-  const myItem = allData.filter((data) => data.email === user?.email);
-  //   const [myItem, setMyItem] = useState(LoadedMyItem);
-  console.log(myItem);
+  // const { user } = useContext(AuthContext);
 
-  console.log(myItem);
+  const [myItem, setMyItem] = useState(LoadedMyItem);
+
   return (
     <div>
       {myItem.map((item) => (
         <MyCraftCard
           key={item._id}
           item={item}
-          //   myItem={myItem}
-          //   setMyItem={setMyItem}
+          myItem={myItem}
+          setMyItem={setMyItem}
         ></MyCraftCard>
       ))}
     </div>

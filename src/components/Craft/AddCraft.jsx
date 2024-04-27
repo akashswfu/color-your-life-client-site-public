@@ -187,7 +187,21 @@ const AddCraft = () => {
             </label>
           </div>
         </div>
-        <div>
+        <div className="md:flex gap-10 justify-center mb-6">
+          <div className="form-control md:w-full mb-5">
+            <label className="label">
+              <span className="label-text">UserName</span>
+            </label>
+            <label className="input-group">
+              <input
+                type="text"
+                name="displayName"
+                placeholder="User Name"
+                className="input input-bordered  w-full"
+                required
+              />
+            </label>
+          </div>
           <div className="form-control md:w-full mb-5">
             <label className="label">
               <span className="label-text">Image </span>

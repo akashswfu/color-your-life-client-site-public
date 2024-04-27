@@ -5,7 +5,7 @@ import { MdPhotoSizeSelectLarge } from "react-icons/md";
 const Category = ({ d }) => {
   const { customization, description, image, rating, stock, subcategory } = d;
   return (
-    <Link to={`/item/${subcategory}`}>
+    <Link to={`/allCategory/${subcategory}`}>
       <div>
         <div className="max-w-sm mt-7 mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
           <div className="relative">
