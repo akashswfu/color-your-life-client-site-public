@@ -14,7 +14,7 @@ const AllSubCategory = () => {
   }
   return (
     <div className="grid grid-cols-1 md:grid-cols-3">
-      {data.map((item) => (
+      {data.slice.map((item) => (
         <SingleAllSubCategory key={item._id} item={item}></SingleAllSubCategory>
       ))}
     </div>
