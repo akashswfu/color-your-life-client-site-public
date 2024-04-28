@@ -1,5 +1,4 @@
 import { Link, useLoaderData } from "react-router-dom";
-import ShowAllArtAndCraft from "./ShowAllArtAndCraft";
 import { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
 
@@ -21,7 +20,7 @@ const AllArtCraft = () => {
   }
 
   return (
-    <div className="h-screen mt-10">
+    <div className="min-h-[calc(100vh-400px)] mt-10 ">
       <div className="overflow-x-auto">
         <table className="table table-zebra">
           {/* head */}

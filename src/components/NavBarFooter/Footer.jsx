@@ -49,8 +49,7 @@ const Footer = () => {
       </nav>
       <aside>
         <p>
-          Copyright © 2024 - All right reserved by Home Haven Real Estate
-          Company Ltd
+          Copyright © 2024 - All right reserved by Color Your Life Company Ltd
         </p>
       </aside>
     </footer>

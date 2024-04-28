@@ -52,6 +52,7 @@ const AddCraft = () => {
           });
         }
       });
+    // e.form.reset();
   };
 
   return (
@@ -190,7 +191,7 @@ const AddCraft = () => {
         <div className="md:flex gap-10 justify-center mb-6">
           <div className="form-control md:w-full mb-5">
             <label className="label">
-              <span className="label-text">UserName</span>
+              <span className="label-text">User Name</span>
             </label>
             <label className="input-group">
               <input
@@ -198,13 +199,13 @@ const AddCraft = () => {
                 name="displayName"
                 placeholder="User Name"
                 className="input input-bordered  w-full"
-                required
+                defaultValue={user.displayName}
               />
             </label>
           </div>
           <div className="form-control md:w-full mb-5">
             <label className="label">
-              <span className="label-text">Image </span>
+              <span className="label-text">Image</span>
             </label>
             <label className="input-group">
               <input

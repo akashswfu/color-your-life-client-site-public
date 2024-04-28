@@ -49,16 +49,16 @@ const Navbar = () => {
       )} */}
 
       <li>
-        <NavLink to="/allArtCraft">All Art Items</NavLink>
+        <NavLink to="/allArtCraft">All Art & craft Items</NavLink>
       </li>
+
+      <li>
+        <NavLink to="/addCraft">Add Craft Item</NavLink>
+      </li>
+
       {user && (
         <li>
-          <NavLink to="/addCraft">Add Art Item</NavLink>
-        </li>
-      )}
-      {user && (
-        <li>
-          <NavLink to={`/myCraftList/${user.email}`}>My Art List</NavLink>
+          <NavLink to={`/myCraftList/${user.email}`}>My Art&Craft List</NavLink>
         </li>
       )}
     </div>

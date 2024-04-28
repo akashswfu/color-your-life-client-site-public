@@ -34,7 +34,7 @@ const MyCraftList = () => {
   };
 
   return (
-    <div>
+    <div className="min-h-[calc(100vh-370px)]">
       <div className="flex justify-center pb-20">
         <details className="dropdown">
           <summary className="m-1 btn">Clicked</summary>

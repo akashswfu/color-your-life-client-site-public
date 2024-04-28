@@ -1,6 +1,6 @@
 import React from "react";
-import { useTypewriter, Cursor } from "react-simple-typewriter";
-import { Bounce, Slide } from "react-awesome-reveal";
+import { useTypewriter } from "react-simple-typewriter";
+import { Slide } from "react-awesome-reveal";
 
 const OurArttist = () => {
   const [typeEffect] = useTypewriter({
@@ -24,24 +24,40 @@ const OurArttist = () => {
       </Slide>
       <div className="flex justify-around">
         <div className="flex flex-col space-y-4 items-center">
-          <img className="w-40 h-40 rounded-full bg-red-500" src="" alt="" />
-          <h2 className="text-2xl font-semibold">Name</h2>
-          <p className="text-xl font-semibold">category</p>
+          <img
+            className="w-40 h-40 rounded-full "
+            src="https://i.postimg.cc/KYDRx78Q/m1.jpg"
+            alt=""
+          />
+          <h2 className="text-2xl font-semibold">Alex Panday</h2>
+          <p className="text-xl font-semibold">Landscape Painting</p>
         </div>
         <div className="flex flex-col space-y-4 items-center">
-          <img className="w-40 h-40 rounded-full bg-red-500" src="" alt="" />
-          <h2 className="text-2xl font-semibold">Name</h2>
-          <p className="text-xl font-semibold">category</p>
+          <img
+            className="w-40 h-40 rounded-full "
+            src="https://i.postimg.cc/zBdvRJWg/m2.jpg"
+            alt=""
+          />
+          <h2 className="text-2xl font-semibold">Subin Ahemed</h2>
+          <p className="text-xl font-semibold">Charcoal Sketching</p>
         </div>
         <div className="flex flex-col space-y-4 items-center">
-          <img className="w-40 h-40 rounded-full bg-red-500" src="" alt="" />
-          <h2 className="text-2xl font-semibold">Name</h2>
-          <p className="text-xl font-semibold">category</p>
+          <img
+            className="w-40 h-40 rounded-full "
+            src="https://i.postimg.cc/4yq3BBW4/m3.jpg"
+            alt=""
+          />
+          <h2 className="text-2xl font-semibold">Bijoy Sarkar</h2>
+          <p className="text-xl font-semibold">Watercolour Painting</p>
         </div>
         <div className="flex flex-col space-y-4 items-center">
-          <img className="w-40 h-40 rounded-full bg-red-500" src="" alt="" />
-          <h2 className="text-2xl font-semibold">Name</h2>
-          <p className="text-xl font-semibold">category</p>
+          <img
+            className="w-40 h-40 rounded-full "
+            src="https://i.postimg.cc/vHxTcwm4/m4.jpg"
+            alt=""
+          />
+          <h2 className="text-2xl font-semibold">Mountain view canvas</h2>
+          <p className="text-xl font-semibold">Akash Sutradhar</p>
         </div>
       </div>
     </div>
