@@ -14,7 +14,7 @@
 
 - Swiper slider.
 
-# Home Haven : https://color-your-life-auth.web.app/
+# Colorful Life : https://color-your-life-auth.web.app/
 
 # My website main Features
 
