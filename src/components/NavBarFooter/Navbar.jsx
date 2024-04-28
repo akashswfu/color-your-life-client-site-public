@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import profile from "../../../public/images/user.png";
-import homeIcons from "/images/home.png";
+import homeIcons from "/images/h.png";
 import Swal from "sweetalert2";
 
 const Navbar = () => {
