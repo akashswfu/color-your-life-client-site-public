@@ -1,6 +1,6 @@
-# React + Vite
+# My selected category's name
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Painting and Drawing
 
 # npm package name which i have used for this project.
 
