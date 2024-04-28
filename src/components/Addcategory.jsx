@@ -2,7 +2,6 @@ import React from "react";
 import Swal from "sweetalert2";
 
 const Addcategory = () => {
-    
   const handleAdd = (e) => {
     e.preventDefault();
     const form = e.target;
@@ -20,7 +19,7 @@ const Addcategory = () => {
       stock,
       image,
     };
-    fetch("http://localhost:5000/category", {
+    fetch("https://color-your-life-server-site.vercel.app/category", {
       method: "POST",
       headers: {
         "content-type": "application/json",

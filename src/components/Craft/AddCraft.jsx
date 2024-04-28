@@ -34,7 +34,7 @@ const AddCraft = () => {
       stock,
     };
     console.log(newItem);
-    fetch("http://localhost:5000/item", {
+    fetch("https://color-your-life-server-site.vercel.app/item", {
       method: "POST",
       headers: {
         "content-type": "application/json",

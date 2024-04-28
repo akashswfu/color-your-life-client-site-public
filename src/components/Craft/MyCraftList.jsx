@@ -1,15 +1,29 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { useLoaderData } from "react-router-dom";
 import MyCraftCard from "./MyCraftCard";
 
 const MyCraftList = () => {
-  const LoadedMyItem = useLoaderData();
+  // const LoadedMyItem = useLoaderData();
 
-  // const { user } = useContext(AuthContext);
+  // const [loadedMyItem, setLoadedMyItem] = useState([]);
+  const [myItem, setMyItem] = useState([]);
+  const [data, setData] = useState(myItem);
 
-  const [myItem, setMyItem] = useState(LoadedMyItem);
-  const [data, setData] = useState(LoadedMyItem);
+  const { user } = useContext(AuthContext);
+  useEffect(() => {
+    fetch(
+      `https://color-your-life-server-site.vercel.app/emailItem/${user.email}`
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        setMyItem(data);
+        setData(data);
+      });
+  }, []);
+  console.log(user.email);
+
+  // console.log(data);
 
   // let sortedByYes = [...myItem];
   const handleSort = (sortBy) => {

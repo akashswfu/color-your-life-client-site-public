@@ -45,7 +45,7 @@ const UpdateData = () => {
       displayName,
       stock,
     };
-    fetch(`http://localhost:5000/item/${_id}`, {
+    fetch(`https://color-your-life-server-site.vercel.app/item/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

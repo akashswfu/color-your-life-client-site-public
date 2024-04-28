@@ -18,7 +18,7 @@ const MyCraftCard = ({ item, myItem, setMyItem }) => {
     }).then((result) => {
       if (result.isConfirmed) {
         console.log("Delete Confirmed");
-        fetch(`http://localhost:5000/item/${_id}`, {
+        fetch(`https://color-your-life-server-site.vercel.app/item/${_id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

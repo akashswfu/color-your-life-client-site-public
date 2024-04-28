@@ -7,7 +7,7 @@ const ArtAndCraftCategoriesSection = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/category")
+    fetch("https://color-your-life-server-site.vercel.app/category")
       .then((res) => res.json())
       .then((data) => setData(data));
   }, []);

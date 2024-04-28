@@ -58,7 +58,7 @@ const Navbar = () => {
 
       {user && (
         <li>
-          <NavLink to={`/myCraftList/${user.email}`}>My Art&Craft List</NavLink>
+          <NavLink to={"/myCraftList"}>My Art&Craft List</NavLink>
         </li>
       )}
     </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import ReactDOM from "react-dom/client";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -8,7 +8,7 @@ import Root from "./Root/Root";
 import Home from "./components/Home/Home";
 import Login from "./components/UserLogged/Login";
 import Register from "./components/UserLogged/Register";
-import AuthProvider from "./Providers/AuthProvider";
+import AuthProvider, { AuthContext } from "./Providers/AuthProvider";
 import AddCraft from "./components/Craft/AddCraft";
 import AllArtCraft from "./components/Craft/AllArtCraft";
 import MyCraftList from "./components/Craft/MyCraftList";
@@ -27,7 +27,8 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch("http://localhost:5000/item"),
+        loader: () =>
+          fetch("https://color-your-life-server-site.vercel.app/item"),
       },
       {
         path: "/login",
@@ -48,17 +49,20 @@ const router = createBrowserRouter([
       {
         path: "/allArtCraft",
         element: <AllArtCraft></AllArtCraft>,
-        loader: () => fetch("http://localhost:5000/item"),
+        loader: () =>
+          fetch("https://color-your-life-server-site.vercel.app/item"),
       },
       {
-        path: "/myCraftList/:email",
+        path: "/myCraftList",
         element: (
           <PrivateRoute>
             <MyCraftList></MyCraftList>
           </PrivateRoute>
         ),
-        loader: ({ params }) =>
-          fetch(`http://localhost:5000/emailItem/${params.email}`),
+        // loader: ({ params }) =>
+        //   fetch(
+        //     `https://color-your-life-server-site.vercel.app/emailItem/${params.email}`
+        //   ),
       },
       {
         path: "/item/:id",
@@ -69,7 +73,9 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/item/${params.id}`),
+          fetch(
+            `https://color-your-life-server-site.vercel.app/item/${params.id}`
+          ),
       },
       {
         path: "/updateItem/:id",
@@ -79,7 +85,9 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/item/${params.id}`),
+          fetch(
+            `https://color-your-life-server-site.vercel.app/item/${params.id}`
+          ),
       },
       {
         path: "/addCategory",
@@ -94,7 +102,9 @@ const router = createBrowserRouter([
         path: "/allCategory/:subcategory",
         element: <AllSubCategory></AllSubCategory>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/allCategory/${params.subcategory}`),
+          fetch(
+            `https://color-your-life-server-site.vercel.app/allCategory/${params.subcategory}`
+          ),
       },
     ],
   },
