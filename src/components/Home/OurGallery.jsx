@@ -1,11 +1,20 @@
 import React from "react";
+import { useTypewriter } from "react-simple-typewriter";
 
 const OurGallery = () => {
+  const [typeEffect] = useTypewriter({
+    words: [" Our Gallery"],
+    // loop: {},
+    typeSpeed: 100,
+    deleteSpeed: 40,
+  });
   return (
     <div>
-      <h3 className="text-transparent bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text font-bold text-4xl text-center my-20">
-        Our Gallery
-      </h3>
+      <h1 className="text-3xl font-bold text-center my-20 ">
+        <span className="text-transparent bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text">
+          {typeEffect}{" "}
+        </span>
+      </h1>
       <div>
         <div className="grid grid-cols-1 md:grid-cols-3 justify-center gap-10">
           <div
@@ -21,17 +30,14 @@ const OurGallery = () => {
             />
 
             <div className="bg-black bg-opacity-50 px-6 py-4 opacity-0 hover:opacity-100 text-white absolute inset-0 rounded transition-opacity duration-200 flex flex-col ">
-              <p className="text-lg font-semibold text-green-500">
-                {" "}
-                Oil Portrai
-              </p>
+              <p className="text-xl font-bold text-green-500"> Oil Portrai</p>
               <br />
 
               <br />
             </div>
           </div>
           <div
-            data-aos="fade-left"
+            data-aos="fade-down"
             data-aos-duration="1000"
             data-aos-delay="500"
             className="overflow-hidden relative transition duration-200 transform hover:-translate-y-2 rounded shadow-lg hover:shadow-2xl"
@@ -43,14 +49,14 @@ const OurGallery = () => {
             />
 
             <div className="bg-black bg-opacity-50 px-6 py-4 opacity-0 hover:opacity-100 text-white absolute inset-0 rounded transition-opacity duration-200 flex flex-col ">
-              <p className="text-lg font-semibold text-green-500">
+              <p className="text-xl font-bold text-green-500">
                 Mountain view canvas
               </p>
               <br />
             </div>
           </div>
           <div
-            data-aos="fade-right"
+            data-aos="fade-left"
             data-aos-duration="1000"
             data-aos-delay="500"
             className="overflow-hidden relative transition duration-200 transform hover:-translate-y-2 rounded shadow-lg hover:shadow-2xl"
@@ -62,7 +68,7 @@ const OurGallery = () => {
             />
 
             <div className="bg-black bg-opacity-50 px-6 py-4 opacity-0 hover:opacity-100 text-white absolute inset-0 rounded transition-opacity duration-200 flex flex-col ">
-              <p className="text-lg font-semibold text-green-500">
+              <p className="text-xl font-bold text-green-500">
                 {" "}
                 Floral Watercolor Art
               </p>
@@ -70,7 +76,7 @@ const OurGallery = () => {
             </div>
           </div>
           <div
-            data-aos="fade-left"
+            data-aos="fade-right"
             data-aos-duration="1000"
             data-aos-delay="500"
             className="overflow-hidden relative transition duration-200 transform hover:-translate-y-2 rounded shadow-lg hover:shadow-2xl"
@@ -82,14 +88,14 @@ const OurGallery = () => {
             />
 
             <div className="bg-black bg-opacity-50 px-6 py-4 opacity-0 hover:opacity-100 text-white absolute inset-0 rounded transition-opacity duration-200 flex flex-col ">
-              <p className="text-lg font-semibold text-green-500">
+              <p className="text-xl font-bold text-green-500">
                 Architectural Charcoal Drawing
               </p>
               <br />
             </div>
           </div>
           <div
-            data-aos="fade-left"
+            data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="500"
             className="overflow-hidden relative transition duration-200 transform hover:-translate-y-2 rounded shadow-lg hover:shadow-2xl"
@@ -101,7 +107,7 @@ const OurGallery = () => {
             />
 
             <div className="bg-black bg-opacity-50 px-6 py-4 opacity-0 hover:opacity-100 text-white absolute inset-0 rounded transition-opacity duration-200 flex flex-col ">
-              <p className="text-lg font-semibold text-green-500">
+              <p className="text-xl font-bold text-green-500">
                 {" "}
                 Superhero Cartoon Design
               </p>
@@ -121,7 +127,7 @@ const OurGallery = () => {
             />
 
             <div className="bg-black bg-opacity-50 px-6 py-4 opacity-0 hover:opacity-100 text-white absolute inset-0 rounded transition-opacity duration-200 flex flex-col ">
-              <p className="text-lg font-semibold text-green-500">
+              <p className="text-xl font-bold text-green-500">
                 Forest based Landscape painting
               </p>
               <br />

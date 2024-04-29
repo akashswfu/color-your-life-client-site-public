@@ -9,9 +9,9 @@ const Category = ({ d }) => {
   return (
     <Link to={`/allCategory/${subcategory}`}>
       <div className="">
-        <div className=" mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex">
+        <div className=" mx-auto border border-gray-200 rounded-lg shadow-2xl  dark:bg-gray-800 dark:border-gray-700 flex">
           <div className="w-full">
-            <img className="h-60 w-96 rounded-lg" src={image} alt="" />
+            <img className="h-60 w-96  rounded-l-lg " src={image} alt="" />
           </div>
           <div className="p-5">
             <div>

@@ -57,7 +57,7 @@ const Home = () => {
         </Slide>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3">
+      <div className="grid grid-cols-1  md:grid-cols-3">
         {item.slice(0, 6).map((it) => (
           <CraftItemSection key={it._id} it={it}></CraftItemSection>
         ))}

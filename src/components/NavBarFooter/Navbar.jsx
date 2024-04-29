@@ -84,7 +84,7 @@ const Navbar = () => {
   console.log(theme);
 
   return (
-    <div className="navbar bg-gray-200 py-4 px-4 md:mb-10">
+    <div className="navbar rounded-b-lg bg-gray-200 py-4 px-4 md:mb-10">
       <div className="navbar-start">
         <div className="dropdown">
           <div
@@ -120,7 +120,7 @@ const Navbar = () => {
             src={homeIcons}
             alt=""
           />
-          <span className="hidden text-3xl font-bold md:flex lg:flex text-transparent bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text">
+          <span className="hidden text-3xl font-bold md:flex lg:flex text-transparent bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text ">
             Colorful Life
           </span>
         </div>

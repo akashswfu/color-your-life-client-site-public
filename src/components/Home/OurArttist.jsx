@@ -14,7 +14,9 @@ const OurArttist = () => {
       <Slide direction="{'down'} delay={1000}">
         <h1 className="text-3xl font-bold text-center mt-20">
           Meet
-          <span className="text-green-600">{typeEffect} </span>
+          <span className="text-transparent bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text">
+            {typeEffect}{" "}
+          </span>
         </h1>
         <p className="text-center w-1/2 mx-auto font-semibold text-lg pt-8 pb-20">
           Passionate artists crafting diverse narratives through vibrant

@@ -24,7 +24,7 @@ const CraftItemSection = ({ it }) => {
 
   return (
     <div>
-      <div className="max-w-sm mt-7 rounded-md mx-auto bg-white border border-gray-200 shadow-2xl dark:bg-gray-800 dark:border-gray-700 ">
+      <div className="max-w-sm mt-10 mx-auto shadow-2xl dark:bg-gray-800 dark:border-gray-700 ">
         {/* <div className="relative">
           <img className="h-60 w-full rounded-t-lg" src={image} alt="" />
           <p>{stock}</p>

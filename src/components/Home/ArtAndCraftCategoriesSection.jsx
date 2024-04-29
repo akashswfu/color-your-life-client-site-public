@@ -34,7 +34,7 @@ const ArtAndCraftCategoriesSection = () => {
           </p>
         </Slide>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 ">
         {data.map((d) => (
           <Category key={d._id} d={d}></Category>
         ))}
