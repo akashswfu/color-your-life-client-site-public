@@ -58,7 +58,7 @@ const Navbar = () => {
 
       {user && (
         <li>
-          <NavLink to={"/myCraftList"}>My Art&Craft List</NavLink>
+          <NavLink to={"/myCraftList"}>My Art & Craft List</NavLink>
         </li>
       )}
     </div>
@@ -84,7 +84,7 @@ const Navbar = () => {
   console.log(theme);
 
   return (
-    <div className="navbar bg-[#f3efe6] py-4 px-4 md:rounded-b-3xl">
+    <div className="navbar bg-gray-200 py-4 px-4 md:mb-10">
       <div className="navbar-start">
         <div className="dropdown">
           <div
@@ -109,7 +109,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-6 z-[1]  p-2 shadow bg-base-100  relative rounded-box w-40"
+            className="menu menu-sm dropdown-content mt-6 z-[1]  p-2 shadow bg-base-100  relative rounded-box w-52"
           >
             {links}
           </ul>
@@ -120,7 +120,7 @@ const Navbar = () => {
             src={homeIcons}
             alt=""
           />
-          <span className="hidden text-2xl font-semibold md:flex lg:flex text-transparent bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text">
+          <span className="hidden text-3xl font-bold md:flex lg:flex text-transparent bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text">
             Colorful Life
           </span>
         </div>
@@ -168,7 +168,7 @@ const Navbar = () => {
             </div>
             <button
               onClick={handleLogout}
-              className="btn btn-outline bg-green-600  hover:bg-green-700 px-6 font-semibold uppercase text-md  text-white border-0 text-md"
+              className="btn btn-outline text-transparent bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-700  px-6 font-semibold uppercase text-md  text-white border-0 text-md"
             >
               Logout
             </button>
@@ -176,12 +176,12 @@ const Navbar = () => {
         ) : (
           <div className="flex gap-4">
             <Link to="/login">
-              <button className="btn btn-outline bg-green-600  hover:bg-green-700 px-8 font-semibold uppercase text-md  text-white border-0 text-md">
+              <button className="btn btn-outline text-transparent bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-700 px-8 font-semibold uppercase text-md  text-white border-0 text-md">
                 Login
               </button>
             </Link>
             <Link to="/register">
-              <button className="btn btn-outline bg-green-600  hover:bg-green-700 px-8 font-semibold uppercase text-md  text-white border-0 text-md">
+              <button className="btn btn-outline text-transparent bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-700 px-8 font-semibold uppercase text-md  text-white border-0 text-md">
                 Register
               </button>
             </Link>

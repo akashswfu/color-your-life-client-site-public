@@ -3,7 +3,7 @@ import React from "react";
 const OurGallery = () => {
   return (
     <div>
-      <h3 className="text-pink-400 font-bold text-3xl text-center my-20">
+      <h3 className="text-transparent bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text font-bold text-4xl text-center my-20">
         Our Gallery
       </h3>
       <div>

@@ -34,15 +34,23 @@ const Home = () => {
 
   return (
     <div>
-      <Banner></Banner>
+      <div className="text-center md:hidden flex-col text-3xl font-bold py-16">
+        Welcome to Our <br />
+        Colorful Life
+      </div>
+      <div className="mx-5 md:mx-0">
+        <Banner></Banner>
+      </div>
 
       <div>
         <Slide direction="{'down'} delay={1000}">
           <h1 className="text-3xl font-bold text-center mt-20">
             Our
-            <span className="text-green-600">{typeEffect} </span>
+            <span className="text-transparent bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text">
+              {typeEffect}{" "}
+            </span>
           </h1>
-          <p className="text-center w-1/2 mx-auto font-semibold text-lg pt-8 pb-20">
+          <p className="text-center w-full md:w-1/2 mx-auto font-semibold text-lg pt-8 pb-20">
             Explore our exquisite collection of art and craft items, crafted
             with passion and skill to inspire creativity and imagination
           </p>
@@ -55,10 +63,9 @@ const Home = () => {
         ))}
       </div>
 
-      <OurArttist></OurArttist>
-
       <ArtAndCraftCategoriesSection></ArtAndCraftCategoriesSection>
       <OurGallery></OurGallery>
+      <OurArttist></OurArttist>
     </div>
   );
 };

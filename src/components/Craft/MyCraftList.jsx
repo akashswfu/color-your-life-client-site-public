@@ -65,14 +65,16 @@ const MyCraftList = () => {
           </ul>
         </details>
       </div>
-      {data.map((item) => (
-        <MyCraftCard
-          key={item._id}
-          item={item}
-          myItem={data}
-          setMyItem={setData}
-        ></MyCraftCard>
-      ))}
+      <div>
+        {data.map((item) => (
+          <MyCraftCard
+            key={item._id}
+            item={item}
+            myItem={data}
+            setMyItem={setData}
+          ></MyCraftCard>
+        ))}
+      </div>
     </div>
   );
 };

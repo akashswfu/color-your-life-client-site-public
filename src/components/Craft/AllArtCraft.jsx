@@ -31,7 +31,7 @@ const AllArtCraft = () => {
               <th>Sub Category</th>
               <th>Rating</th>
               <th>Price</th>
-              <th>Customization</th>
+              <th className="">Customization</th>
               <th>View Details</th>
             </tr>
           </thead>
@@ -43,9 +43,9 @@ const AllArtCraft = () => {
                 <td>{item.subcategory}</td>
                 <td>{item.rating}</td>
                 <td>{item.price}</td>
-                <td>{item.customization}</td>
+                <td className="">{item.customization}</td>
                 <Link to={`/item/${item._id}`}>
-                  <p className="text-blue-600 underline">View Details</p>
+                  <td className="text-blue-600 underline">View Details</td>
                 </Link>
               </tr>
             ))}

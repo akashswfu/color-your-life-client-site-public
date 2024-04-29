@@ -38,7 +38,7 @@ const Banner = () => {
           data-aos="zoom-in"
           data-aos-duration="1000"
           data
-          className="w-full md:h-[450px] lg:h-[650px] rounded-3xl "
+          className="w-full md:h-[450px] lg:h-[650px] rounded-lg "
           src="https://i.postimg.cc/vH27dsND/b2.jpg"
           alt=""
         />
@@ -48,7 +48,7 @@ const Banner = () => {
           data-aos="zoom-in"
           data-aos-duration="1000"
           data
-          className="w-full md:h-[450px] lg:h-[650px] rounded-3xl opacity-50"
+          className="w-full md:h-[450px] lg:h-[650px] rounded-lg opacity-50"
           src="https://i.postimg.cc/SNxL5sVw/b1.jpg"
           alt=""
         />
@@ -58,7 +58,7 @@ const Banner = () => {
           data-aos="zoom-in"
           data-aos-duration="1000"
           data
-          className="w-full md:h-[450px] lg:h-[650px] rounded-3xl"
+          className="w-full md:h-[450px] lg:h-[650px] rounded-lg"
           src="https://i.postimg.cc/YC46rs5R/b3.jpg"
           alt=""
         />
@@ -68,7 +68,7 @@ const Banner = () => {
           data-aos="zoom-in"
           data-aos-duration="1000"
           data
-          className="w-full md:h-[450px] lg:h-[650px] rounded-3xl"
+          className="w-full md:h-[450px] lg:h-[650px] rounded-lg"
           src="https://i.postimg.cc/s275SZDZ/b4.jpg"
           alt=""
         />
@@ -78,7 +78,7 @@ const Banner = () => {
           data-aos="zoom-in"
           data-aos-duration="1000"
           data
-          className="w-full md:h-[450px] lg:h-[650px] rounded-3xl"
+          className="w-full md:h-[450px] lg:h-[650px] rounded-lg"
           src="https://i.postimg.cc/PxMZVsDX/b5.jpg"
           alt=""
         />

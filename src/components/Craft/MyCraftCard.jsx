@@ -39,7 +39,7 @@ const MyCraftCard = ({ item, myItem, setMyItem }) => {
   };
 
   return (
-    <div className="flex rounded-2xl w-[700px] mx-auto gap-10 bg-base-100 shadow-xl mt-8">
+    <div className="flex rounded-2xl w-[500px] md:w-[700px] mx-auto gap-10 bg-base-100 shadow-xl mt-8">
       <div>
         <img className="w-60 rounded-l-2xl h-full" src={image} alt="" />
       </div>

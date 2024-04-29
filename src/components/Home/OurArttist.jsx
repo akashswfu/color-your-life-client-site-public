@@ -22,7 +22,7 @@ const OurArttist = () => {
           canvas.
         </p>
       </Slide>
-      <div className="flex justify-around">
+      <div className="flex flex-col md:flex-row justify-center md:justify-around space-y-7 md:space-y-0">
         <div className="flex flex-col space-y-4 items-center">
           <img
             className="w-40 h-40 rounded-full "
