@@ -47,7 +47,7 @@ const AddCraft = () => {
         if (data.insertedId) {
           Swal.fire({
             title: "Success!",
-            text: "Coffee Added Successfully",
+            text: "New Item Added Successfully",
             icon: "success",
           });
         }
@@ -56,13 +56,13 @@ const AddCraft = () => {
   };
 
   return (
-    <div className="p-24 bg-gray-100">
-      <h2 className="text-center text-transparent bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text  text-4xl font-bold pb-16 uppercase">
+    <div className="md:p-24 p-5 bg-gray-100">
+      <h2 className="text-center text-transparent bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text  text-4xl font-bold md:pb-16 my-10 md:my-0 uppercase">
         Add a New Item
       </h2>
       <form onSubmit={handleAddCoffee}>
         {/* name and subcategory row  */}
-        <div className="md:flex gap-10 justify-center mb-6">
+        <div className="md:flex w-full  gap-10 justify-center md:mb-6">
           <div className="form-control md:w-1/2">
             <label className="label">
               <span className="label-text">Item Name</span>
@@ -95,7 +95,7 @@ const AddCraft = () => {
 
         {/* shortDescription and price row  */}
 
-        <div className="md:flex gap-10 justify-center mb-6">
+        <div className="md:flex gap-10 justify-center md:mb-6">
           <div className="form-control md:w-1/2">
             <label className="label">
               <span className="label-text">Short Description</span>
@@ -128,7 +128,7 @@ const AddCraft = () => {
 
         {/* rating and customization row  */}
 
-        <div className="md:flex gap-10 justify-center mb-6">
+        <div className="md:flex gap-10 justify-center md:mb-6">
           <div className="form-control md:w-1/2">
             <label className="label">
               <span className="label-text">Rating</span>
@@ -160,7 +160,7 @@ const AddCraft = () => {
         </div>
         {/* processing  and stock row  */}
 
-        <div className="md:flex gap-10 justify-center mb-6">
+        <div className="md:flex gap-10 justify-center md:mb-6">
           <div className="form-control md:w-1/2">
             <label className="label">
               <span className="label-text">Processing Time (hr)</span>
@@ -190,7 +190,7 @@ const AddCraft = () => {
             </label>
           </div>
         </div>
-        <div className="md:flex gap-10 justify-center mb-6">
+        <div className="md:flex gap-10 justify-center md:mb-6">
           <div className="form-control md:w-full mb-5">
             <label className="label">
               <span className="label-text">User Name</span>
@@ -207,18 +207,34 @@ const AddCraft = () => {
           </div>
           <div className="form-control md:w-full mb-5">
             <label className="label">
-              <span className="label-text">Image</span>
+              <span className="label-text">User Email</span>
             </label>
             <label className="input-group">
               <input
                 type="text"
-                name="image"
-                placeholder="Image URL"
+                name="email"
+                placeholder="User Email"
                 className="input input-bordered  w-full"
                 required
+                defaultValue={user.email}
+                readOnly
               />
             </label>
           </div>
+        </div>
+        <div className="form-control md:w-full mb-5">
+          <label className="label">
+            <span className="label-text">Image</span>
+          </label>
+          <label className="input-group">
+            <input
+              type="text"
+              name="image"
+              placeholder="Image URL"
+              className="input input-bordered  w-full"
+              required
+            />
+          </label>
         </div>
 
         {/* user email and name  */}

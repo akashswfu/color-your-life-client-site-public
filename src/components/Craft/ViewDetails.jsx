@@ -50,7 +50,7 @@ const ViewDetails = () => {
             data-aos-delay="800"
             className="text-transparent bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-xl text-center lg:text-left mt-8 lg:mt-0 font-semibold"
           >
-            Category : {subcategory}{" "}
+            Sub Category : {subcategory}{" "}
           </p>
           <div className="border border-dashed "></div>
           <h1
@@ -65,7 +65,7 @@ const ViewDetails = () => {
           <div
             data-aos="fade-left"
             data-aos-delay="1500"
-            className="flex items-center flex-col md:flex-row justify-center lg:justify-start  gap-8 mb-5"
+            className="flex flex-col md:justify-start   justify-center lg:justify-start  gap-8 mb-5"
           >
             <div className="flex gap-8">
               <div className="flex items-center gap-2 text-green-600 font-semibold">
@@ -97,7 +97,7 @@ const ViewDetails = () => {
           <div
             data-aos="fade-left"
             data-aos-delay="1500"
-            className="flex   gap-8 justify-center lg:justify-start"
+            className="flex flex-col md:justify-start  gap-8 justify-center lg:justify-start"
           >
             <div className="flex items-center gap-2 font-semibold text-pink-700">
               <MdDashboardCustomize className=" text-xl font-bold" />

@@ -120,7 +120,7 @@ const Navbar = () => {
             src={homeIcons}
             alt=""
           />
-          <span className="hidden text-3xl font-bold md:flex lg:flex text-transparent bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text ">
+          <span className="hidden text-xl lg:text-3xl font-bold md:flex lg:flex text-transparent bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text ">
             Colorful Life
           </span>
         </div>

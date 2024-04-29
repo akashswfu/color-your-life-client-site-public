@@ -28,7 +28,7 @@ const AllArtCraft = () => {
             <tr>
               <th>No.</th>
               <th>Name</th>
-              <th>Category</th>
+              <th>Sub Category</th>
               {/* <th>Rating</th> */}
               <th>Price</th>
               <th className="text-center">Customization</th>

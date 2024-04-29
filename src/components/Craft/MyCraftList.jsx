@@ -4,9 +4,7 @@ import { useLoaderData } from "react-router-dom";
 import MyCraftCard from "./MyCraftCard";
 
 const MyCraftList = () => {
-  // const LoadedMyItem = useLoaderData();
-
-  // const [loadedMyItem, setLoadedMyItem] = useState([]);
+  const { setLoading } = useContext(AuthContext);
   const [myItem, setMyItem] = useState([]);
   const [data, setData] = useState(myItem);
 
@@ -21,11 +19,11 @@ const MyCraftList = () => {
         setData(data);
       });
   }, []);
-  console.log(user.email);
-
-  // console.log(data);
-
-  // let sortedByYes = [...myItem];
+  if (data.length === 0) {
+    <p className="text-xl text-red-500 font-semibold">
+      No Data Added By You! Please add first then visit here!
+    </p>;
+  }
   const handleSort = (sortBy) => {
     const sortByYes = myItem.filter(
       (item) => item.customization.toLowerCase() === sortBy
@@ -35,24 +33,16 @@ const MyCraftList = () => {
     if (sortBy === "All") {
       setData(myItem);
     }
-
-    // if (sortBy === "yes") {
-
-    // }
-    // if (sortBy === "no") {
-    //   const sortByYNo = myItem.filter(
-    //     (item) => item.customization.toLowerCase() === "no"
-    //   );
-    //   setMyItem(sortByYNo);
-    // }
   };
 
   return (
     <div className="min-h-[calc(100vh-370px)]">
-      <div className="flex justify-center pb-20">
+      <div className="flex justify-center pb-24">
         <details className="dropdown">
-          <summary className="m-1 btn">Clicked</summary>
-          <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+          <summary className="m-1 px-3 cursor-pointer py-2 rounded-lg  border-0 w-full bg-[#23BE0A] text-white text-xl font-semibold">
+            SORT BY
+          </summary>
+          <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-36">
             <li onClick={() => handleSort("yes")}>
               <a>Sort By Yes</a>
             </li>
@@ -65,7 +55,7 @@ const MyCraftList = () => {
           </ul>
         </details>
       </div>
-      <div>
+      <div className="mx-3">
         {data.map((item) => (
           <MyCraftCard
             key={item._id}
