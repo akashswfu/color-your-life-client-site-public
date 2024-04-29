@@ -7,8 +7,8 @@ const AllSubCategory = () => {
   console.log(data);
   if (data.length === 0) {
     return (
-      <p className="text-3xl font-bold text-center h-screen py-20">
-        No Data added
+      <p className="text-3xl font-bold text-center min-h-[calc(100vh-380px)] text-red-500  py-20">
+        No Data Matching by This Category
       </p>
     );
   }
