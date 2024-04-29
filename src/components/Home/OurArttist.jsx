@@ -58,8 +58,8 @@ const OurArttist = () => {
             src="https://i.postimg.cc/vHxTcwm4/m4.jpg"
             alt=""
           />
-          <h2 className="text-2xl font-semibold">Mountain view canvas</h2>
-          <p className="text-xl font-semibold">Akash Sutradhar</p>
+          <h2 className="text-2xl font-semibold">Akash Sutradhar </h2>
+          <p className="text-xl font-semibold">Mountain view canvas</p>
         </div>
       </div>
     </div>

@@ -60,7 +60,7 @@ const Register = () => {
       <div className="hero-content w-full  flex-col">
         <div className="text-center"></div>
         <div className="card shrink-0 w-full max-w-md shadow-2xl bg-base-100">
-          <h1 className="text-3xl text-green-500 font-bold text-center mt-8">
+          <h1 className="text-3xl text-transparent bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text font-bold text-center mt-8">
             Create an account
           </h1>
           <form
@@ -154,7 +154,7 @@ const Register = () => {
 
             {error && <p className="text-sm text-red-500">{error}</p>}
             <div className="form-control mt-6">
-              <button className="btn bg-green-600  hover:bg-green-700 text-lg font-semibold text-white">
+              <button className="btn  uppercase  text-white text-transparent bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-700 font-semibold ">
                 Register
               </button>
             </div>

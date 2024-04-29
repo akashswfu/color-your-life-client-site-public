@@ -16,7 +16,7 @@ const OurGallery = () => {
         </span>
       </h1>
       <div>
-        <div className="grid grid-cols-1 md:grid-cols-3 justify-center gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-10">
           <div
             data-aos="fade-right"
             data-aos-duration="1000"

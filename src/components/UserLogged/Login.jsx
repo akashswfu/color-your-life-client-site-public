@@ -68,7 +68,7 @@ const Login = () => {
       <div className="hero-content w-full flex-col mt-8">
         <div className="card shrink-0 w-full max-w-md  shadow-2xl bg-base-100 ">
           <div className="text-center ">
-            <h1 className="text-4xl font-bold my-8 text-green-500">
+            <h1 className="text-4xl font-bold my-8 text-transparent bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text">
               Login now!
             </h1>
           </div>
@@ -109,7 +109,7 @@ const Login = () => {
             </div>
             {error && <p className="text-sm text-red-500">{error}</p>}
             <div className="form-control mt-6">
-              <button className="btn  bg-green-600  hover:bg-green-700 text-lg font-semibold text-white">
+              <button className="btn  uppercase   text-transparent bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-700 font-semibold text-white">
                 Login
               </button>
             </div>
@@ -124,16 +124,16 @@ const Login = () => {
           <div className="text-center mt-2  pb-5 flex gap-2 justify-center">
             <button
               onClick={handleGoogleLogin}
-              className="btn btn-outline hover:border-0 hover:outline-none border-green-600 hover:bg-green-600 text-green-600"
+              className="btn btn-outline hover:border-0 hover:outline-none bg-gradient-to-r  hover:from-purple-600 hover:to-pink-700 font-semibold text-purple-600"
             >
               <FcGoogle className="text-2xl me-2" />
               Google Login
             </button>
             <button
               onClick={handleGithubLogin}
-              className="btn btn-outline hover:border-0 hover:outline-none  hover:bg-green-600 mb-5 hover:bg-green-600 text-green-600"
+              className="btn btn-outline hover:border-0 hover:outline-none bg-gradient-to-r  hover:from-purple-600 hover:to-pink-700 font-semibold text-pink-400 "
             >
-              <SiGithub className="text-2xl  me-2" />
+              <SiGithub className="text-2xl  me-2 " />
               GitHub Login
             </button>
           </div>

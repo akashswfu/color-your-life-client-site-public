@@ -1,9 +1,13 @@
 import { AiOutlineDollar } from "react-icons/ai";
 import { CiLocationOn } from "react-icons/ci";
-import { MdPhotoSizeSelectLarge } from "react-icons/md";
+import { MdDashboardCustomize, MdPhotoSizeSelectLarge } from "react-icons/md";
 import { RiHomeSmileFill } from "react-icons/ri";
 import { TbHomePlus } from "react-icons/tb";
 import { useLoaderData, useParams } from "react-router-dom";
+import { FaSackDollar } from "react-icons/fa6";
+import { FaStar } from "react-icons/fa";
+import { IoTime } from "react-icons/io5";
+import { CgShutterstock } from "react-icons/cg";
 
 const ViewDetails = () => {
   const allItem = useLoaderData();
@@ -33,7 +37,7 @@ const ViewDetails = () => {
             alt=""
           />
         </div>
-        <div className="space-y-5 lg:w-1/2 text-center md:text-left md:py-0 py-5">
+        <div className="space-y-5 mt-5 lg:w-1/2 text-center md:text-left md:py-0 py-5">
           <h1
             data-aos="fade-left"
             data-aos-delay="500"
@@ -44,9 +48,9 @@ const ViewDetails = () => {
           <p
             data-aos="fade-left"
             data-aos-delay="800"
-            className="text-green-500 text-xl text-center lg:text-left mt-8 lg:mt-0 font-semibold"
+            className="text-transparent bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-xl text-center lg:text-left mt-8 lg:mt-0 font-semibold"
           >
-            Segment Name : {subcategory}{" "}
+            Category : {subcategory}{" "}
           </p>
           <div className="border border-dashed "></div>
           <h1
@@ -64,24 +68,21 @@ const ViewDetails = () => {
             className="flex items-center flex-col md:flex-row justify-center lg:justify-start  gap-8 mb-5"
           >
             <div className="flex gap-8">
-              <div className="flex items-center gap-2 text-blue-700 font-semibold">
-                <CiLocationOn className="text-xl  font-bold" />
+              <div className="flex items-center gap-2 text-green-600 font-semibold">
+                <FaSackDollar className="text-xl  font-bold" />
                 <p className=""> {price}</p>
-              </div>
-              <div className="flex items-center gap-2 font-semibold text-blue-700">
-                <MdPhotoSizeSelectLarge className=" text-xl font-bold" />
-                <p> {processing}</p>
               </div>
             </div>
             <div className="flex gap-8">
-              <div className="flex items-center gap-2 font-semibold text-blue-700">
-                <AiOutlineDollar className=" text-xl font-bold" />
+              <div className="flex items-center gap-2 font-semibold text-yellow-500">
+                <FaStar className=" text-xl font-bold" />
                 <p> {rating}</p>
               </div>
               <div className="flex items-center gap-2 font-semibold text-blue-700">
-                <AiOutlineDollar className=" text-xl font-bold" />
-                <p> Stocks : YES</p>
+                <CgShutterstock className=" text-xl font-bold" />
+                <p> {stock}</p>
               </div>
+
               {/* <div className="flex items-center gap-2 font-semibold text-blue-700">
                 {status === "sale" ? (
                   <TbHomePlus className=" text-xl font-bold" />
@@ -93,8 +94,19 @@ const ViewDetails = () => {
               </div> */}
             </div>
           </div>
-          <div>
-            <h1>And it can customaize</h1>
+          <div
+            data-aos="fade-left"
+            data-aos-delay="1500"
+            className="flex   gap-8 justify-center lg:justify-start"
+          >
+            <div className="flex items-center gap-2 font-semibold text-pink-700">
+              <MdDashboardCustomize className=" text-xl font-bold" />
+              <p>Customization : {customization}</p>
+            </div>
+            <div className="flex items-center gap-2 font-semibold text-red-700">
+              <IoTime className=" text-xl font-bold" />
+              <p>Processing Time : {processing} (hr)</p>
+            </div>
           </div>
 
           <div className="border border-dashed "></div>

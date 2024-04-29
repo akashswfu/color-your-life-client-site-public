@@ -7,7 +7,7 @@ import { FaStar } from "react-icons/fa";
 const Category = ({ d }) => {
   const { customization, description, image, rating, stock, subcategory } = d;
   return (
-    <Link to={`/allCategory/${subcategory}`}>
+    <Link className="hover:bg-gray-200" to={`/allCategory/${subcategory}`}>
       <div className="">
         <div className=" mx-auto border border-gray-200 rounded-lg shadow-2xl  dark:bg-gray-800 dark:border-gray-700 flex">
           <div className="w-full">

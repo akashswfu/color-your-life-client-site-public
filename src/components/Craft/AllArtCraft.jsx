@@ -22,16 +22,16 @@ const AllArtCraft = () => {
   return (
     <div className="min-h-[calc(100vh-400px)] mt-10 ">
       <div className="overflow-x-auto">
-        <table className="table table-zebra">
+        <table className="table table-zebra border-2 ">
           {/* head */}
           <thead>
             <tr>
               <th>No.</th>
               <th>Name</th>
-              <th>Sub Category</th>
-              <th>Rating</th>
+              <th>Category</th>
+              {/* <th>Rating</th> */}
               <th>Price</th>
-              <th className="">Customization</th>
+              <th className="text-center">Customization</th>
               <th>View Details</th>
             </tr>
           </thead>
@@ -41,9 +41,9 @@ const AllArtCraft = () => {
                 <th>{idx + 1}</th>
                 <td>{item.name}</td>
                 <td>{item.subcategory}</td>
-                <td>{item.rating}</td>
+                {/* <td>{item.rating}</td> */}
                 <td>{item.price}</td>
-                <td className="">{item.customization}</td>
+                <td className="text-center">{item.customization}</td>
                 <Link to={`/item/${item._id}`}>
                   <td className="text-blue-600 underline">View Details</td>
                 </Link>

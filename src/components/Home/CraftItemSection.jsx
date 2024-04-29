@@ -62,7 +62,7 @@ const CraftItemSection = ({ it }) => {
             </div>
             <div className="flex items-center gap-2 font-semibold text-red-500">
               <IoTime className=" text-xl font-bold" />
-              <p className=""> {processing}</p>
+              <p className=""> {processing} (hr)</p>
             </div>
           </div>
 

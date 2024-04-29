@@ -57,7 +57,9 @@ const AddCraft = () => {
 
   return (
     <div className="p-24 bg-gray-100">
-      <h2 className="text-center text-4xl font-bold pb-16">Add a New Item</h2>
+      <h2 className="text-center text-transparent bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text  text-4xl font-bold pb-16 uppercase">
+        Add a New Item
+      </h2>
       <form onSubmit={handleAddCoffee}>
         {/* name and subcategory row  */}
         <div className="md:flex gap-10 justify-center mb-6">
@@ -222,7 +224,7 @@ const AddCraft = () => {
         {/* user email and name  */}
 
         <input
-          className="btn btn-block bg-black text-white font-semibold hover:text-black"
+          className="btn w-full text-lg uppercase  text-white text-transparent bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-700"
           type="submit"
           value="Add Item"
         />
